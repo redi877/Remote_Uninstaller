@@ -68,6 +68,8 @@ if (sc.Status == ServiceControllerStatus.Stopped)
     
     Console.WriteLine("ok");
 
+    Form1.Soft.Items.Clear();
+
     foreach (PSObject result in ps.Invoke())
       {
           
